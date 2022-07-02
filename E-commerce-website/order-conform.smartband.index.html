@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script defer src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body onload="initializeApp()">
+
+    <div class="header">
+        <div class="container">
+
+        </div>
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="main-index.html">Home</a></li>
+                    <li><a href="product-page-index.html">Products</a></li>
+                    <li><a href="contact.index.html">Contacts</a></li>
+                    <li><a href="about-us-index.html">About</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+        </div>
+
+        <div class="small-container">
+            <h2 class="title">Place order</h2>
+        </div>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/exclusive.png" alt="">
+                    </div>
+                    <!-- <div class="col-3">
+                            <img src="images/category-2.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/category-3.jpg" alt="">
+                        </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="small-container">
+            <h2 class="title"> How to place Order</h2>
+        </div>
+
+
+        <div class="col-2">
+            <!-- <p>Exclusively avaliblr on BAC</p> -->
+            <h2>To place an order:</h2>
+            <small>
+                   To place order enter your full adress below (If you are not signed in to redstore go and create a account and then come back)
+                <br>after adding adress you have to add your activated pgone number, your full name and select payment method.
+                </small>
+
+
+
+            <br>
+
+        </div>
+        <div class="input-tags">
+            <form method="post">
+                <input type="name" placeholder="Enter your name" class="name_in" id="username" name="name"><br>
+                <input type="email" placeholder="Enter your email(You will be contacted)" class="name_in" name="email" id="email"><br>
+                <input type="text" placeholder="Enter your phone no.(You will be contacted)" class="name_in" name="phone" id="phone"><br>
+                <input type="text" placeholder="Enter your full address" class="name_in" name="address" id="address"><br>
+                <input type="name" placeholder="Extras" class="name_in extras" name="extras" id="extras">
+            </form>
+        </div>
+        <button class="btn btn_s" id="sumbit" type="submit" name="sumbit">Sumbit &#8594</button>
+        <a href="product-page-index.html">
+            <button class="btn">Go to Products &#8594</button>
+        </a>
+        <script src="crud.js"></script>
+        <script src="fierebaseDB.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
